@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Twitter Bootstrapの練習</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  
+   <!--
+   グリッドシステム
+	940px/12   
+   -->
+    <div class="container">
+    
+	    <div id="header">
+	    header
+	    </div>
+	    
+	    <h2><i class="icon-home"></i>段組</h2>
+	    <div class="row-fluid">
+	        <div class="span4" id="left" style="background-color:green;">left</div>
+	        <div class="span4" id="main" style="background-color:red;">main</div>
+	        <div class="span4" id="right" style="background-color:yellow;">right</div>
+	    </div>
+	    	    <p>4:4:4 3段組(row-floid)</p>
+	    	    
+	    <div class="row">
+	        <div class="span4" id="left" style="background-color:green;">left</div>
+	        <div class="span4" id="main" style="background-color:red;">main</div>
+	        <div class="span4" id="right" style="background-color:yellow;">right</div>
+	    </div>
+	    	    <p>4:4:4 3段組(row)</p>
+	    
+	    <div class="row-fluid">
+	        <div class="span6" id="left" style="background-color:#7f4af0;">left2</div>
+	        <div class="span6" id="right" style="background-color:#e7d440;">right2</div>
+	    </div>
+	    	    <p>6:6 2段組(row-fluid)</p>
+	    
+	    <div class="row">
+	        <div class="span6" id="left" style="background-color:#7f4af0;">left2</div>
+	        <div class="span6" id="right" style="background-color:#e7d440;">right2</div>
+	    </div>
+	    		 <p>6:6 2段組(row)</p>
+	    
+	    <div class="row-fluid">
+	        <div class="span4" id="left" style="background-color:#fba526;">left3</div>
+	        <div class="span8" id="right" style="background-color:#c92e1b;">right3</div>
+	    </div>
+	    		<p>4:8 2段組(row-fluid)</p>
+	    
+	  	<div class="row">
+	        <div class="span4" id="left" style="background-color:#fba526;">left3</div>
+	        <div class="span8" id="right" style="background-color:#c92e1b;">right3</div>
+	    </div>
+	    		<p>4:8 2段組(row)</p>
+	    		
+	   
+	   <hr />
+	    <h2>テーブル</h2>
+	    <table class="table table-striped  table-bordered  table-condensed">
+	    	<!--table 線をつける-->
+	    	<!--table-striped 行色分け-->
+		    <thead>
+		        <tr><th>name</th><th>sales</th></tr>
+		    </thead>
+		    
+		    <tbody>
+		        <tr><td>kato</td><td>200</td></tr>
+		        <tr><td>sato</td><td>100</td></tr>
+		        <tr><td>tanaka</td><td>400</td></tr>
+		    </tbody>
+		    
+    	</table>
+    	
+    	<hr />
+    	<h2>フォーム1</h2>
+    	
+    		<form>
+	            <label>名前</label>
+	            <input type="text" name="name" class="span3">
+	            <input type="submit" value="送信" class="btn span1" > <!--btnクラス-->
+            </form>          
+            
+            <div class="control-group success">
+            <label>メアド</label>
+	            <div class="controls">
+	            	<input type="text" name="name" class="span4"> <span class="help-inline">OK</span>
+	            </div>
+            </div>
+            
+            <div class="control-group error">
+            <label>メアド</label>
+	            <div class="controls">
+	            	<input type="text" name="name" class="span4"> <span class="help-inline">形式が正しくありません</span>
+	            </div>
+            </div>
+            
+         <h2>フォーム2</h2>
+         
+			<form class="well form-inline">
+			  <input type="text" class="input-small" placeholder="Email">
+			  <input type="password" class="input-small" placeholder="Password">
+			  <label class="checkbox">
+			    <input type="checkbox"> Remember me
+			  </label>
+			  <button type="submit" class="btn">Sign in</button>
+			  
+			</form>
+			
+			 <h2>フォーム3</h2>
+			<form class="form-horizontal">
+			<fieldset>
+				<div class="control-group">
+						<label class="control-label" for="input01">Text input</label>
+						<div class="controls">
+							<input type="text" class="input-xlarge" id="input01">
+							<p class="help-block">Supporting help text</p>
+						</div>
+						
+						<div class="control-group">
+							<div class="controls">
+								<input type="submit" value="送信" class="btn">
+							 </div>
+			              </div>
+				</div>
+			</fieldset>
+			</form>
+			
+			<h2>ボタン</h2>
+			<span class="btn">OK</span>
+			<span class="btn btn-primary">OK!</span>
+			<span class="btn btn-info">OK!</span>
+			<span class="btn btn-success">OK!</span>
+			<span class="btn btn-warning">OK!</span>
+			<span class="btn btn-danger">OK!</span>
+			<span class="btn btn-small">OK!</span>
+			<span class="btn btn-large">OK!</span>
+			
+						<br />
+						
+			<h2>ボタン2</h2>
+			<span class="btn"><i class="icon-search"></i> Search</span>
+			
+			<h2>ボタン3</h2>
+			<div class="btn-group">
+	            <button class="btn">Option 1</button>
+	            <button class="btn"><i class="icon-search"></i> Option 2</button>
+	            <button class="btn">Option 3</button>
+            </div>
+            
+            <h2>ボタン4</h2>
+            <div class="btn-group">
+            <a href="#" class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Option 3</a></li>
+            </ul>
+        </div>
+        
+        <h2>タブ</h2>
+        <div class="tabbable tabs-below">
+            <div class="tab-content">
+                <div id="menu1" class="tab-pane active">M1</div>
+                <div id="menu2" class="tab-pane">M2</div>
+                <div id="menu3" class="tab-pane">M3</div>
+            </div>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#menu1" data-toggle="tab">Menu1</a></li>
+                <li><a href="#menu2" data-toggle="tab">Menu2</a></li>
+                <li><a href="#menu3" data-toggle="tab">Menu3</a></li>
+            </ul>
+        </div>
+	    
+	    <div id="footer">
+	    footer
+	    </div>
+	    
+    </div><!--container-->
+   
+</body>
+</html>
